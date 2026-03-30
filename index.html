@@ -160,16 +160,74 @@
 
 <section class="quiz-front" id="quiz-front">
   <div class="quiz-front-inner">
-    <div class="section-eyebrow">Two-question quiz</div>
-    <h2>Find your <span class="script-accent" style="color:var(--sun-yellow);">exact path</span> forward.</h2>
-    <p>Two questions. We'll match you to the right formation plan and show you what the smartest founders do next.</p>
-    <div class="quiz-btn-wrap" style="display:inline-flex;flex-direction:column;align-items:center;">
-      <span class="quiz-btn-above">2 questions &nbsp;&middot;&nbsp; instant results</span>
+    <div class="section-eyebrow">2-Question Quiz</div>
+    <h2>Which nonprofit path is <span class="script-accent" style="color:var(--sun-yellow);">right for you?</span></h2>
+    <p>Every nonprofit founder has a different situation. Answer 2 quick questions and we'll instantly reveal your exact plan — the one 5,000+ founders have used to get IRS-approved.</p>
+
+    <div class="mystery-section">
+      <div class="mystery-label">4 possible results &mdash; which one is yours?</div>
+      <div class="mystery-grid">
+
+        <div class="mc">
+          <div class="mc-ribbon">Most Popular</div>
+          <div class="mc-icon">🚀</div>
+          <div class="mc-name">Express</div>
+          <div class="mc-price">$877</div>
+          <div class="mc-lines">
+            <div class="mc-line"></div>
+            <div class="mc-line s"></div>
+            <div class="mc-line"></div>
+          </div>
+          <div class="mc-lock">🔒</div>
+        </div>
+
+        <div class="mc">
+          <div class="mc-icon">🏛️</div>
+          <div class="mc-name">Enterprise</div>
+          <div class="mc-price">$1,497</div>
+          <div class="mc-lines">
+            <div class="mc-line"></div>
+            <div class="mc-line s"></div>
+            <div class="mc-line"></div>
+          </div>
+          <div class="mc-lock">🔒</div>
+        </div>
+
+        <div class="mc">
+          <div class="mc-icon">💎</div>
+          <div class="mc-name">Private Foundation</div>
+          <div class="mc-price">$1,997</div>
+          <div class="mc-lines">
+            <div class="mc-line"></div>
+            <div class="mc-line s"></div>
+            <div class="mc-line"></div>
+          </div>
+          <div class="mc-lock">🔒</div>
+        </div>
+
+        <div class="mc">
+          <div class="mc-icon">🏢</div>
+          <div class="mc-name">501(c)4 / Other</div>
+          <div class="mc-price">$1,497</div>
+          <div class="mc-lines">
+            <div class="mc-line"></div>
+            <div class="mc-line s"></div>
+            <div class="mc-line"></div>
+          </div>
+          <div class="mc-lock">🔒</div>
+        </div>
+
+      </div>
+      <p class="mystery-hint">Take the quiz to <span>unlock your result ↓</span></p>
+    </div>
+
+    <div class="quiz-btn-wrap" style="display:inline-flex;flex-direction:column;align-items:center;margin-top:1.75rem;">
+      <span class="quiz-btn-above">Takes 2 questions &nbsp;&middot;&nbsp; See your plan instantly</span>
       <a href="#quiz-engine" class="btn-primary" style="display:inline-flex;">Find the right plan for you &nbsp;<span class="btn-arrow">&#8594;</span></a>
     </div>
     <div class="quiz-reassurance">
       <span class="qr-item"><span class="qr-dot"></span>No email required to see results</span>
-      <span class="qr-item"><span class="qr-dot"></span>No pricing until you're ready</span>
+      <span class="qr-item"><span class="qr-dot"></span>No pricing walls</span>
       <span class="qr-item"><span class="qr-dot"></span>Just 2 questions</span>
     </div>
   </div>
@@ -177,34 +235,63 @@
 
 <section class="quiz-engine-wrap" id="quiz-engine">
   <div class="quiz-pre">
-    <div class="section-eyebrow" style="margin-bottom:8px;color:var(--sun-yellow);">&#9889; 2 questions &rarr; your personalized plan</div>
-    <h2>Take the Quiz &mdash; See the perfect plan for you.</h2>
-    <p>Answer below and we'll instantly show you the exact plan 5,000+ founders have used to get IRS-approved.</p>
+    <div class="quiz-pre-badge"><span>🎯</span> 2 questions &rarr; your personalized plan</div>
+    <h2>Which formation path is right for you?</h2>
+    <p>Select your situation below. We'll instantly match you to the exact plan — no guessing, no pressure.</p>
   </div>
   <div class="quiz-card">
     <div class="qcard-header" id="qcard-header">
       <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
       <div class="sdots"><div class="sdot active" id="sd1"></div><div class="sdot" id="sd2"></div><div class="sdot" id="sd3"></div></div>
-      <h3 id="q-title">Which category does your nonprofit fit?</h3>
-      <p id="q-sub">If none apply, skip down to "Charitable Tax-Exempt."</p>
+      <h3 id="q-title">Does your nonprofit fit any of these specific categories?</h3>
+      <p id="q-sub">If none of these apply, we'll skip straight to your recommendation.</p>
       <button class="back-link" id="back-btn">&#8592; Start over</button>
     </div>
-    <div class="q-options" id="q1-body">
-      <button class="q-opt" data-q1="church"><div class="q-opt-left"><div class="q-opt-title">Formal church or religious organization</div><div class="q-opt-desc">An established house of worship or religious institution</div></div><div class="q-opt-right"><div class="q-arrow">&#8250;</div></div></button>
-      <button class="q-opt" data-q1="church"><div class="q-opt-left"><div class="q-opt-title">Accredited school or educational institution</div><div class="q-opt-desc">A licensed or accredited academic organization</div></div><div class="q-opt-right"><div class="q-arrow">&#8250;</div></div></button>
-      <button class="q-opt" data-q1="church"><div class="q-opt-left"><div class="q-opt-title">Hospital or healthcare facility</div><div class="q-opt-desc">A licensed medical or healthcare organization</div></div><div class="q-opt-right"><div class="q-arrow">&#8250;</div></div></button>
-      <button class="q-opt" data-q1="foundation"><div class="q-opt-left"><div class="q-opt-title">Private foundation</div><div class="q-opt-desc">Single primary funding source — e.g. a family foundation</div></div><div class="q-opt-right"><div class="q-arrow">&#8250;</div></div></button>
-      <button class="q-opt" data-q1="c4"><div class="q-opt-left"><div class="q-opt-title">501(c)4, (c)6, or other non-charitable type</div><div class="q-opt-desc">Chamber of commerce, issue advocacy, trade association</div></div><div class="q-opt-right"><div class="q-arrow">&#8250;</div></div></button>
-      <button class="q-opt featured" data-q1="charitable"><div class="q-opt-left"><div class="q-opt-title" style="color:var(--electric-blue);">None of the above — which means you're Charitable Tax-Exempt like 87% of founders</div><div class="q-opt-desc">The most common path for new nonprofits</div></div><div class="q-opt-right"><span class="q-badge">Most common</span><div class="q-arrow" style="background:var(--electric-blue);color:#fff;">&#8250;</div></div></button>
+    <div class="qoc-grid" id="q1-body">
+      <button class="qoc-card" data-q1="church">
+        <span class="qoc-icon">🕊️</span>
+        <div class="qoc-title">Church / Religious Org</div>
+        <div class="qoc-desc">House of worship or religious institution</div>
+      </button>
+      <button class="qoc-card" data-q1="church">
+        <span class="qoc-icon">🎓</span>
+        <div class="qoc-title">Accredited School</div>
+        <div class="qoc-desc">Licensed or accredited academic organization</div>
+      </button>
+      <button class="qoc-card" data-q1="church">
+        <span class="qoc-icon">🏥</span>
+        <div class="qoc-title">Hospital / Healthcare</div>
+        <div class="qoc-desc">Licensed medical or healthcare facility</div>
+      </button>
+      <button class="qoc-card" data-q1="foundation">
+        <span class="qoc-icon">💎</span>
+        <div class="qoc-title">Private Foundation</div>
+        <div class="qoc-desc">Single funding source — e.g. family foundation</div>
+      </button>
+      <button class="qoc-card" data-q1="c4">
+        <span class="qoc-icon">🏛️</span>
+        <div class="qoc-title">501(c)4, (c)6 or Other</div>
+        <div class="qoc-desc">Advocacy, chamber, or trade association</div>
+      </button>
+      <button class="qoc-card qoc-star" data-q1="charitable">
+        <span class="qoc-icon">⚡</span>
+        <div class="qoc-pill">87% of founders pick this</div>
+        <div class="qoc-title">None of these &mdash; show me my recommendation</div>
+      </button>
     </div>
-    <div class="q2-wrap" id="q2-body">
-      <div class="q2-note">&#128274; <strong>Not a locked-in decision.</strong> This only determines which IRS application we use — the 501(c)(3) status is identical either way, and there's no penalty if your revenue changes later.</div>
-      <button class="q-opt" data-q2="under"><div class="q-opt-left"><div class="q-opt-title">Under $50k per year — or not sure yet</div><div class="q-opt-desc">Small to medium org, or I'd like to raise more but don't know how much yet</div></div><div class="q-opt-right"><span class="q-badge">~80% choose this</span><div class="q-arrow">&#8250;</div></div></button>
-      <button class="q-opt" data-q2="over"><div class="q-opt-left"><div class="q-opt-title">$50k or more in any of the first 3 years</div><div class="q-opt-desc">Scaling quickly or already have major donors or grants lined up</div></div><div class="q-opt-right"><div class="q-arrow">&#8250;</div></div></button>
-    </div>
-    <div class="q3-wrap" id="q3-body">
-      <button class="q-opt" data-q3="foundation-programs"><div class="q-opt-left"><div class="q-opt-title">Run our own programs and initiatives</div><div class="q-opt-desc">We will directly execute work and serve our mission</div></div><div class="q-opt-right"><div class="q-arrow">&#8250;</div></div></button>
-      <button class="q-opt" data-q3="foundation-grants"><div class="q-opt-left"><div class="q-opt-title">Fund other organizations through grants</div><div class="q-opt-desc">We will deploy capital to support other nonprofits and causes</div></div><div class="q-opt-right"><div class="q-arrow">&#8250;</div></div></button>
+    <div class="q2-wrap qoc-duo" id="q2-body">
+      <div class="q2-note" style="grid-column:1/-1;margin-bottom:4px;">&#128274; <strong>Not a locked-in decision.</strong> This only determines which IRS application we use — the 501(c)(3) status is identical either way.</div>
+      <button class="qoc-card-lg" data-q2="under">
+        <div class="qoc-icon">🌱</div>
+        <div class="qoc-title">Under $50k per year</div>
+        <div class="qoc-desc">Small to medium org, or not sure yet</div>
+        <div class="qoc-pill">~80% of founders</div>
+      </button>
+      <button class="qoc-card-lg" data-q2="over">
+        <div class="qoc-icon">🚀</div>
+        <div class="qoc-title">$50k+ in any of the first 3 years</div>
+        <div class="qoc-desc">Scaling quickly or major donors lined up</div>
+      </button>
     </div>
   </div>
 </section>
@@ -520,7 +607,7 @@
               <div class="vtc-card">
                 <div class="vtc-video" data-src="https://player.vimeo.com/video/819138452?h=4296f7a536&amp;app_id=122963&autoplay=1&controls=1">
                   <img src="https://i.vimeocdn.com/video/1657905461-197df1355d35adc6dc7701ea4f9330caa20f77167640aa8bcf537f534d5a0d2e-d_1280.jpg" alt="Amy Scruggs testimonial" loading="lazy">
-                  <div class="vtc-play">&#9654;</div>
+                  <div class="vtc-play"></div>
                 </div>
                 <div class="vtc-body">
                   <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -534,7 +621,7 @@
               <div class="vtc-card">
                 <div class="vtc-video" data-src="https://player.vimeo.com/video/886027356?h=9ff0850bdf&amp;app_id=122963&autoplay=1&controls=1">
                   <img src="https://i.vimeocdn.com/video/1755873387-800f8df317450d7b5b9082f33a4e548ed2efc096390d3745b287b23d3c3aa8cf-d_1280.jpg" alt="Melford Bibens testimonial" loading="lazy">
-                  <div class="vtc-play">&#9654;</div>
+                  <div class="vtc-play"></div>
                 </div>
                 <div class="vtc-body">
                   <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -548,7 +635,7 @@
               <div class="vtc-card">
                 <div class="vtc-video" data-src="https://player.vimeo.com/video/816614748?app_id=122963&autoplay=1&controls=1">
                   <img src="https://i.vimeocdn.com/video/1653557956-6c25e48d28c0e6861b872e773894adc0e8b74019aef95836d2439b3ef4eb5c27-d_1280.jpg" alt="Erwin Valencia testimonial" loading="lazy">
-                  <div class="vtc-play">&#9654;</div>
+                  <div class="vtc-play"></div>
                 </div>
                 <div class="vtc-body">
                   <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -562,7 +649,7 @@
               <div class="vtc-card">
                 <div class="vtc-video" data-src="https://player.vimeo.com/video/886011840?h=a99d893dd7&amp;app_id=122963&autoplay=1&controls=1">
                   <img src="https://i.vimeocdn.com/video/1755846075-a3a8eebe11b55977f1eb18ba23ef677cb6021390738665a2fda190417c465ac5-d_1280.jpg" alt="Cody Wood testimonial" loading="lazy">
-                  <div class="vtc-play">&#9654;</div>
+                  <div class="vtc-play"></div>
                 </div>
                 <div class="vtc-body">
                   <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -600,31 +687,31 @@
     </div>
     <div class="faq-list">
       <div class="faq-item">
-        <button class="faq-q">Once I start my 501(c)3 with Instant Nonprofit, how soon can I start raising money? <span class="faq-arrow">&#9654;</span></button>
+        <button class="faq-q">Once I start my 501(c)3 with Instant Nonprofit, how soon can I start raising money? <span class="faq-arrow"></span></button>
         <div class="faq-a">So glad you asked! Unlike the misleading information found all over the Internet, there's a little-known IRS policy that allows you to start fundraising much sooner than previously believed.<br><br>The IRS' official policy is to <strong>back-date your 501(c)3 Tax-Exempt Status</strong> to the date when we file your <strong>Articles of Incorporation</strong>.<br><br>This means that your donors (both individual and corporate) can get a tax break by donating to you even <strong>before you receive your IRS Approval letter</strong> in the mail!<br><br>Every <strong>Nonprofit Launch Package</strong> comes with a document containing the exact IRS rule that makes this possible, so you can use it to <strong>raise money right away</strong>!</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">What if I already formed an LLC (or other entity), or obtained an EIN, prior to engaging InstantNonprofit? <span class="faq-arrow">&#9654;</span></button>
+        <button class="faq-q">What if I already formed an LLC (or other entity), or obtained an EIN, prior to engaging InstantNonprofit? <span class="faq-arrow"></span></button>
         <div class="faq-a">Not a problem! While most of our customers come to us for a fresh start so we can do everything from A to Z, some have already taken a step forward by starting an LLC or another entity with the intent of obtaining Tax-Exempt Status.<br><br>We commend those efforts — it's much better to try something than to try nothing!<br><br>In every case, we will inspect your paperwork for accuracy and ensure all required language is included. We find that in about 66% of cases, customers who self-incorporate fail to add the required addenda — known as the <strong>Purpose and Dissolution Clause</strong>.<br><br>Your state may not require these provisions, but if they are missing, we will need to amend your articles, or the IRS will reject your application. We do this at no extra charge, but government filing fees apply.<br><br>Also, any EIN that was assigned to another entity at any time <strong>cannot</strong> be applied to your new nonprofit — you'll need a new one.<br><br>The BEST thing to do before starting with us is… <strong>NOTHING!</strong> It's easiest to start fresh with InstantNonprofit — because we do it all <strong>FOR</strong> you!</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">Can I be reimbursed, or receive a write-off against my personal income taxes, for my nonprofit startup costs? <span class="faq-arrow">&#9654;</span></button>
+        <button class="faq-q">Can I be reimbursed, or receive a write-off against my personal income taxes, for my nonprofit startup costs? <span class="faq-arrow"></span></button>
         <div class="faq-a">GREAT QUESTION! So many founders put forth their <strong>own hard-earned money</strong> to start a nonprofit by paying for filing services, building a website, or purchasing other products and services before officially launching — then wonder if there is any way to be credited for those expenses.<br><br>The great news is that <strong>YES</strong> — you can choose to be <strong>reimbursed</strong> (your nonprofit can pay you back after raising funds or receiving a grant), or you can choose to <strong>write it off as a charitable donation</strong> on your personal or business income taxes.<br><br>Keep receipts for these expenditures, and it's wise to create a paper trail, such as an invoice or acknowledgment of the expense provided by the nonprofit to the source of the funds.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">How much does it cost to start my 501(c)3? <span class="faq-arrow">&#9654;</span></button>
+        <button class="faq-q">How much does it cost to start my 501(c)3? <span class="faq-arrow"></span></button>
         <div class="faq-a">The IRS has created two paths to 501(c)3 tax-exempt status based on expected donations:<br><br>1. <strong>Organizations confident they will raise more than $50,000</strong> in the current tax year or in any of the following two tax years qualify for our <strong>Enterprise Plan</strong>.<br><br>2. <strong>Organizations with expected donations below $50,000/year</strong>, or without a clear path to exceed that amount, qualify for our <strong>Express Plan</strong>.<br><br>About <strong>82% of our customers qualify</strong> for the <strong>Streamlined IRS Application</strong> for Tax Exempt Status, while the other <strong>18% must use the Long-Form 1023 Process</strong> (see <strong>Enterprise</strong> and <strong>Evolved</strong>).<br><br>If you are a <strong>small, local, or limited-funds founder</strong> with a modest projected budget and scope of activities, choose the <strong>Express Launch Package</strong>. If you exceed your wildest fundraising dreams under this package, don't worry! <strong>There is no penalty</strong>, and you do not have to re-file anything. You will simply report your donations to the IRS as normal in the following year.<br><br>However, if you have a <strong>projected budget larger than $50k</strong> in 2025, 2026 or 2027 you will choose between <strong>Enterprise</strong> and <strong>Evolved</strong>.<br><br>The <strong>Enterprise Plan</strong> certainly gets the job done and, as you can see on this page, it includes <strong>far more than other offerings</strong> from providers who claim to be effective at creating 501(c)3 organizations.<br><br>But for those proven leaders who want to get out of the gate faster and more effectively to <strong>maximize their impact</strong> — by getting support not only for creating the organization and covering the required items — there is the premium <strong>Evolved Launch Package</strong>.<br><br>With <strong>Evolved</strong>, once we file your IRS application, we move on to coaching and training, and together we embark on the two other major pillars of your nonprofit's success:<br><br>1. We build your organization's <strong>Case for Support</strong> (by wrapping up <strong>Mission</strong>, <strong>Vision</strong>, <strong>Values</strong>, <strong>Milestones</strong>, and <strong>Strategy</strong> into a set of "North Star" guiding documents).<br><br>2. We guide you through our <strong>Fundraising Masterclass</strong>, so you can have the <strong>Tools</strong>, <strong>Strategy</strong>, and <strong>Assets</strong> to go from zero to $1 Million or more in your first 12 months.<br><br>Learn more details, choose the right plan for you, and get started by clicking <strong>"Get Plans &amp; Pricing"</strong> on this page.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">Can my for-profit and nonprofit work together? <span class="faq-arrow">&#9654;</span></button>
+        <button class="faq-q">Can my for-profit and nonprofit work together? <span class="faq-arrow"></span></button>
         <div class="faq-a">Yes, you can build a <strong>strategic partnership</strong> between your for-profit and nonprofit. However, your nonprofit will be set up as its <strong>own entity</strong> and must operate independently, with <strong>separate decision-making processes and finances</strong> from your for-profit.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">How long does it take to start my 501(c)3? <span class="faq-arrow">&#9654;</span></button>
+        <button class="faq-q">How long does it take to start my 501(c)3? <span class="faq-arrow"></span></button>
         <div class="faq-a">While we don't claim to control the IRS (if we did, we'd gladly lower your taxes!), InstantNonprofit is known to cut IRS approval times by half to two-thirds thanks to our <strong>"love letter to a bureaucrat"</strong> approach.<br><br>We don't just rely on the IRS online process — we also attach a detailed, professionally formatted <strong>54-page PDF</strong> outlining your organization's activities. This helps the IRS agent reviewing your file feel confident, organized, and ready to hit the <strong>"APPROVED"</strong> button without delays or questions.<br><br>There are two factors influencing how long this takes:<br><br>1. <strong>Your time investment:</strong> Depending on the IRS 1023 application type:<br>- Streamlined: Less than <strong>30 minutes</strong> of your time.<br>- Long-Form: Around <strong>90 minutes</strong> on average.<br><br>2. <strong>Our submission time and government processing times:</strong><br>- Once we have your information, our team double-checks for accuracy and submits within <strong>48-72 hours</strong>.<br><br><strong>State Incorporation:</strong><br>Post-COVID, state wait times vary:<br>- <strong>Florida:</strong> 6-12 weeks.<br>- <strong>AL, AZ, CT, DC, GA, IL, IA, MI, NE, NY, ND, PA, SD:</strong> 2-4 weeks.<br>- <strong>All other states:</strong> 2-3 days to 2 weeks.<br><br><strong>IRS Processing Times:</strong><br>- <strong>Streamlined:</strong> 6-9 weeks on average.<br>- <strong>Long-Form:</strong> 8-20 weeks on average.<br><br>We take a complex, bureaucratic process and turn it into clear, simple steps you can understand — just like a conversation over coffee.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">What are the Benefits of Starting a Nonprofit? <span class="faq-arrow">&#9654;</span></button>
+        <button class="faq-q">What are the Benefits of Starting a Nonprofit? <span class="faq-arrow"></span></button>
         <div class="faq-a"><strong>Pros of Starting a 501(c)3 Nonprofit:</strong><br><br>1. <strong>Tax Benefits:</strong> Donations are tax-deductible, and the organization is exempt from federal income tax.<br><br>2. <strong>Access to Grants:</strong> Eligible for a wide range of public and private grants, as well as government resources, including a $120,000/year Google Ads grant.<br><br>3. <strong>Positive Image:</strong> The "Halo Effect" enhances reputation and attracts support.<br><br>4. <strong>Sense of Purpose:</strong> Employees are motivated by the intrinsic rewards of meaningful work.<br><br>5. <strong>Perpetuity:</strong> Nonprofits exist indefinitely, ensuring long-term impact.<br><br>6. <strong>Liability Protection:</strong> Provides limited liability protection for directors, officers, and staff.</div>
       </div>
     </div>
@@ -729,13 +816,14 @@ function pickQ1(val) {
     if (val === 'charitable') {
         document.getElementById('q-title').textContent = 'How much do you expect to raise in the first 3 years?';
         document.getElementById('q-sub').textContent = 'The IRS uses this to determine which application is required. The 501(c)(3) status is identical either way.';
-        document.getElementById('q2-body').classList.add('show');
         setProgress(66, 2);
     } else if (val === 'foundation') {
-        document.getElementById('q-title').textContent = 'One more question about your foundation.';
-        document.getElementById('q-sub').textContent = 'This helps us match you with the right programs for your foundation type.';
-        document.getElementById('q3-body').classList.add('show');
-        setProgress(66, 2);
+        document.getElementById('q-title').textContent = 'Got it.';
+        document.getElementById('q-sub').textContent = 'Loading your recommended path\u2026';
+        setProgress(100, 3);
+        setTimeout(function () {
+            showResults('pkg-foundation', 'foundation');
+        }, 400);
     } else if (val === 'church') {
         document.getElementById('q-title').textContent = 'Got it.';
         document.getElementById('q-sub').textContent = 'Loading your recommended path\u2026';
@@ -764,7 +852,7 @@ function pickQ1(val) {
  * Quiz Step 2 — revenue threshold (charitable path)
  */
 function pickQ2(val) {
-    document.getElementById('q2-body').classList.remove('show');
+    document.getElementById('q2-body').style.display = 'none';
     document.getElementById('q-title').textContent = 'Got it.';
     document.getElementById('q-sub').textContent = 'Loading your recommended path\u2026';
     setProgress(100, 3);
@@ -776,30 +864,15 @@ function pickQ2(val) {
 }
 
 /**
- * Quiz Step 3 — foundation variant
- */
-function pickQ3(variant) {
-    document.getElementById('q3-body').classList.remove('show');
-    document.getElementById('q-title').textContent = 'Got it.';
-    document.getElementById('q-sub').textContent = 'Loading your recommended path\u2026';
-    setProgress(100, 3);
-
-    setTimeout(function () {
-        showResults('pkg-foundation', variant);
-    }, 400);
-}
-
-/**
  * Reset quiz back to step 1
  */
 function goBack() {
     hideAllPkgs();
     document.getElementById('results-section').classList.remove('show');
-    document.getElementById('q1-body').style.display = 'flex';
-    document.getElementById('q2-body').classList.remove('show');
-    document.getElementById('q3-body').classList.remove('show');
-    document.getElementById('q-title').textContent = 'Which category does your nonprofit fit?';
-    document.getElementById('q-sub').textContent = 'If none apply, skip down to "Charitable Tax-Exempt."';
+    document.getElementById('q1-body').style.display = 'grid';
+    document.getElementById('q2-body').style.display = 'grid';
+    document.getElementById('q-title').textContent = 'Does your nonprofit fit any of these specific categories?';
+    document.getElementById('q-sub').textContent = 'If none of these apply, we\'ll skip straight to your recommendation.';
     document.getElementById('back-btn').style.display = 'none';
     setProgress(33, 1);
 }
@@ -865,9 +938,6 @@ document.querySelectorAll('[data-q1]').forEach(function (btn) {
 });
 document.querySelectorAll('[data-q2]').forEach(function (btn) {
     btn.addEventListener('click', function () { pickQ2(btn.dataset.q2); });
-});
-document.querySelectorAll('[data-q3]').forEach(function (btn) {
-    btn.addEventListener('click', function () { pickQ3(btn.dataset.q3); });
 });
 document.getElementById('back-btn').addEventListener('click', goBack);
 document.querySelectorAll('.faq-q').forEach(function (btn) {
