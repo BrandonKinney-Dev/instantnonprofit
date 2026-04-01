@@ -1567,7 +1567,6 @@ body {
     text-align: center;
 }
 
-/* === "Not ready" email capture — COMMENTED OUT (no email automations / PDF delivery / thank you page needed yet) ===
 .nr-or-divider {
     align-items: center;
     display: flex;
@@ -1699,7 +1698,36 @@ body {
         width: 100%;
     }
 }
-=== end commented out section === */
+.not-ready-capture .nr-perks {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    list-style: none;
+    margin: 0 0 16px;
+    padding: 0;
+}
+
+.not-ready-capture .nr-perks li {
+    align-items: flex-start;
+    color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    font-size: 13px;
+    font-weight: 600;
+    gap: 8px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.not-ready-capture .nr-perks li .perk-icon {
+    flex-shrink: 0;
+}
+
+.not-ready-capture .nr-sms-note {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 11px;
+    margin-top: 4px;
+    text-align: center;
+}
 
 .nudge-bar {
     align-items: center;
