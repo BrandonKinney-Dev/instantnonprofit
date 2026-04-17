@@ -59,6 +59,9 @@
 .val-card{background:#fff;border:1px solid var(--border-light);border-radius:14px;padding:1.75rem;transition:all .2s;}
 .val-card:hover{box-shadow:0 8px 30px rgba(21,39,65,.08);transform:translateY(-3px);}
 .val-badge{display:inline-block;background:var(--electric-blue);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 11px;border-radius:100px;margin-bottom:12px;}
+.val-card-head{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap;}
+.val-card-head .val-badge{margin-bottom:0;}
+.val-logo{height:22px;width:auto;display:block;}
 .val-card .stars{font-size:18px;margin-bottom:8px;color:var(--sun-yellow);}
 .val-score{font-size:28px;font-weight:900;color:var(--jet-blue);letter-spacing:-.02em;margin-bottom:4px;}
 .val-score small{font-size:14px;color:var(--text-light);font-weight:600;}
@@ -163,7 +166,7 @@
 .qoc-pill{display:inline-block;background:rgba(255,180,0,.18);color:#a86a00;font-size:10.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:100px;align-self:flex-start;}
 .qoc-star{background:linear-gradient(135deg,rgba(53,100,232,.05),rgba(255,180,0,.06));border-color:var(--electric-blue);}
 .qoc-star .qoc-title{color:var(--electric-blue);}
-.qoc-duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:1rem 1.25rem 1.5rem;}
+.qoc-duo{grid-template-columns:1fr 1fr;gap:14px;padding:1rem 1.25rem 1.5rem;}
 .qoc-card-lg{background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:1.5rem 1.35rem;text-align:left;cursor:pointer;transition:all .15s;display:flex;flex-direction:column;gap:8px;font-family:"Urbanist",sans-serif;}
 .qoc-card-lg:hover{border-color:var(--electric-blue);transform:translateY(-2px);box-shadow:0 12px 34px rgba(53,100,232,.12);}
 .qoc-card-lg .qoc-icon{font-size:28px;}
@@ -402,24 +405,33 @@
   <div class="val-inner">
     <div class="section-header">
       <div class="section-eyebrow">What the ratings show</div>
-      <h2>The ratings tell the story</h2>
+      <h2>#1 on every review platform</h2>
       <p>Independent platforms. Same pattern across every one.</p>
     </div>
     <div class="val-grid">
       <div class="val-card">
-        <span class="val-badge">BBB</span>
+        <div class="val-card-head">
+          <svg class="val-logo" viewBox="0 0 60 26" xmlns="http://www.w3.org/2000/svg" aria-label="BBB"><rect width="60" height="26" rx="3" fill="#0D3B6B"/><text x="30" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="14" fill="#fff">BBB</text></svg>
+          <span class="val-badge">BBB</span>
+        </div>
         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <div class="val-score">5.0 <small>/ A+ Rating</small></div>
         <p>Accredited since 2014. InstantNonprofit has held a BBB A+ rating for over a decade.</p>
       </div>
       <div class="val-card">
-        <span class="val-badge">Trustpilot</span>
+        <div class="val-card-head">
+          <svg class="val-logo" viewBox="0 0 96 24" xmlns="http://www.w3.org/2000/svg" aria-label="Trustpilot"><polygon points="12,2 14.6,9.2 22,9.2 16,13.6 18.4,21 12,16.4 5.6,21 8,13.6 2,9.2 9.4,9.2" fill="#00B67A"/><text x="28" y="17" font-family="Arial, sans-serif" font-weight="700" font-size="14" fill="#191919">Trustpilot</text></svg>
+          <span class="val-badge">Trustpilot</span>
+        </div>
         <div class="stars">&#9733;&#9733;&#9733;&#9733;<span style="opacity:.5">&#9733;</span></div>
         <div class="val-score">4.7 <small>/ 53+ verified reviews</small></div>
         <p>Reviews thank our dedicated specialist teams by name. LegalZoom's nonprofit reviews mention confusion and hidden fees.</p>
       </div>
       <div class="val-card">
-        <span class="val-badge">Google &amp; Facebook</span>
+        <div class="val-card-head">
+          <svg class="val-logo" viewBox="0 0 74 26" xmlns="http://www.w3.org/2000/svg" aria-label="Google"><text x="0" y="19" font-family="Arial, sans-serif" font-weight="700" font-size="20"><tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC04">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan></text></svg>
+          <span class="val-badge">Google &amp; Facebook</span>
+        </div>
         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <div class="val-score">4.9 / 5.0 <small>across platforms</small></div>
         <p>Across every platform, the pattern is the same: dedicated specialists, fast approvals, no surprises.</p>
