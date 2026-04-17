@@ -59,9 +59,10 @@
 .val-card{background:#fff;border:1px solid var(--border-light);border-radius:14px;padding:1.75rem;transition:all .2s;}
 .val-card:hover{box-shadow:0 8px 30px rgba(21,39,65,.08);transform:translateY(-3px);}
 .val-badge{display:inline-block;background:var(--electric-blue);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 11px;border-radius:100px;margin-bottom:12px;}
-.val-card-head{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap;}
-.val-card-head .val-badge{margin-bottom:0;}
-.val-logo{height:22px;width:auto;display:block;}
+.val-card-head{display:flex;align-items:center;gap:12px;margin-bottom:12px;min-height:32px;}
+.val-logo{height:26px;width:auto;display:block;object-fit:contain;max-width:150px;}
+.val-card-head-duo .val-logo{height:22px;}
+.val-logo-fb{height:24px;}
 .val-card .stars{font-size:18px;margin-bottom:8px;color:var(--sun-yellow);}
 .val-score{font-size:28px;font-weight:900;color:var(--jet-blue);letter-spacing:-.02em;margin-bottom:4px;}
 .val-score small{font-size:14px;color:var(--text-light);font-weight:600;}
@@ -110,9 +111,11 @@
 .hero .hb{background:#f6f8fb;color:var(--jet-blue);border:1px solid var(--border-light);border-radius:100px;padding:8px 16px;font-size:13px;font-weight:700;}
 .hero .hb .hb-dot{background:var(--electric-blue);}
 .hero .hero-sub-note{color:var(--text-light)!important;}
-.hero .hero-cta-wrap{margin-top:.5rem;gap:14px;}
-.hero .hero-guarantee-badge{background:rgba(53,100,232,.06);color:var(--jet-blue)!important;border:1px solid rgba(53,100,232,.2);margin-top:8px;}
-.hero .quiz-btn-wrap{margin-bottom:0;}
+.hero .hero-cta-wrap{margin-top:1.25rem;gap:22px;flex-direction:column;align-items:center;}
+.hero .hero-guarantee-badge{background:rgba(53,100,232,.06);color:var(--jet-blue)!important;border:1px solid rgba(53,100,232,.2);margin-top:18px;}
+.hero .quiz-btn-wrap{margin-bottom:0;gap:10px;}
+.hero .quiz-btn-wrap .btn-primary{margin:6px 0;}
+.hero .hero-sub-note{margin-top:4px;}
 .hero .quiz-btn-above{color:var(--text-light)!important;}
 
 /* ─── Social proof logos row ─── */
@@ -413,8 +416,7 @@
     <div class="val-grid">
       <div class="val-card">
         <div class="val-card-head">
-          <svg class="val-logo" viewBox="0 0 60 26" xmlns="http://www.w3.org/2000/svg" aria-label="BBB"><rect width="60" height="26" rx="3" fill="#0D3B6B"/><text x="30" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="14" fill="#fff">BBB</text></svg>
-          <span class="val-badge">BBB</span>
+          <img class="val-logo" src="images/logos/bbb.svg" alt="Better Business Bureau">
         </div>
         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <div class="val-score">5.0 <small>/ A+ Rating</small></div>
@@ -422,17 +424,16 @@
       </div>
       <div class="val-card">
         <div class="val-card-head">
-          <svg class="val-logo" viewBox="0 0 96 24" xmlns="http://www.w3.org/2000/svg" aria-label="Trustpilot"><polygon points="12,2 14.6,9.2 22,9.2 16,13.6 18.4,21 12,16.4 5.6,21 8,13.6 2,9.2 9.4,9.2" fill="#00B67A"/><text x="28" y="17" font-family="Arial, sans-serif" font-weight="700" font-size="14" fill="#191919">Trustpilot</text></svg>
-          <span class="val-badge">Trustpilot</span>
+          <img class="val-logo" src="images/logos/trustpilot.svg" alt="Trustpilot">
         </div>
         <div class="stars">&#9733;&#9733;&#9733;&#9733;<span style="opacity:.5">&#9733;</span></div>
         <div class="val-score">4.7 <small>/ 53+ verified reviews</small></div>
         <p>Reviews thank our dedicated specialist teams by name. LegalZoom's nonprofit reviews mention confusion and hidden fees.</p>
       </div>
       <div class="val-card">
-        <div class="val-card-head">
-          <svg class="val-logo" viewBox="0 0 74 26" xmlns="http://www.w3.org/2000/svg" aria-label="Google"><text x="0" y="19" font-family="Arial, sans-serif" font-weight="700" font-size="20"><tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC04">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan></text></svg>
-          <span class="val-badge">Google &amp; Facebook</span>
+        <div class="val-card-head val-card-head-duo">
+          <img class="val-logo" src="images/logos/google.svg" alt="Google">
+          <img class="val-logo val-logo-fb" src="images/logos/facebook.svg" alt="Facebook">
         </div>
         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <div class="val-score">4.9 / 5.0 <small>across platforms</small></div>
